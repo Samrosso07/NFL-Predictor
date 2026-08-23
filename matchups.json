@@ -1,0 +1,1670 @@
+{
+  "1": [
+    {
+      "home": "SEA",
+      "away": "NE",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "LA",
+      "away": "SF",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "CAR",
+      "away": "CHI",
+      "homePct": 52,
+      "awayPct": 48
+    },
+    {
+      "home": "CIN",
+      "away": "TB",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "DET",
+      "away": "NO",
+      "homePct": 71,
+      "awayPct": 29
+    },
+    {
+      "home": "HOU",
+      "away": "BUF",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "IND",
+      "away": "BAL",
+      "homePct": 53,
+      "awayPct": 47
+    },
+    {
+      "home": "JAX",
+      "away": "CLE",
+      "homePct": 69,
+      "awayPct": 31
+    },
+    {
+      "home": "PIT",
+      "away": "ATL",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "TEN",
+      "away": "NYJ",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "LAC",
+      "away": "ARI",
+      "homePct": 72,
+      "awayPct": 28
+    },
+    {
+      "home": "LV",
+      "away": "MIA",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "MIN",
+      "away": "GB",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "PHI",
+      "away": "WAS",
+      "homePct": 70,
+      "awayPct": 30
+    },
+    {
+      "home": "NYG",
+      "away": "DAL",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "KC",
+      "away": "DEN",
+      "homePct": 53,
+      "awayPct": 47
+    }
+  ],
+  "2": [
+    {
+      "home": "BUF",
+      "away": "DET",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "ATL",
+      "away": "CAR",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "BAL",
+      "away": "NO",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "CHI",
+      "away": "MIN",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "HOU",
+      "away": "CIN",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "NE",
+      "away": "PIT",
+      "homePct": 62,
+      "awayPct": 38
+    },
+    {
+      "home": "NYJ",
+      "away": "GB",
+      "homePct": 45,
+      "awayPct": 55
+    },
+    {
+      "home": "TB",
+      "away": "CLE",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "TEN",
+      "away": "PHI",
+      "homePct": 38,
+      "awayPct": 62
+    },
+    {
+      "home": "DEN",
+      "away": "JAX",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "LAC",
+      "away": "LV",
+      "homePct": 73,
+      "awayPct": 27
+    },
+    {
+      "home": "ARI",
+      "away": "SEA",
+      "homePct": 36,
+      "awayPct": 64
+    },
+    {
+      "home": "DAL",
+      "away": "WAS",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "SF",
+      "away": "MIA",
+      "homePct": 67,
+      "awayPct": 33
+    },
+    {
+      "home": "KC",
+      "away": "IND",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "LA",
+      "away": "NYG",
+      "homePct": 75,
+      "awayPct": 25
+    }
+  ],
+  "3": [
+    {
+      "home": "GB",
+      "away": "ATL",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "BUF",
+      "away": "LAC",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "CLE",
+      "away": "CAR",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "DET",
+      "away": "NYJ",
+      "homePct": 75,
+      "awayPct": 25
+    },
+    {
+      "home": "IND",
+      "away": "HOU",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "JAX",
+      "away": "NE",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "MIA",
+      "away": "KC",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "NYG",
+      "away": "TEN",
+      "homePct": 62,
+      "awayPct": 38
+    },
+    {
+      "home": "PIT",
+      "away": "CIN",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "WAS",
+      "away": "SEA",
+      "homePct": 43,
+      "awayPct": 57
+    },
+    {
+      "home": "SF",
+      "away": "ARI",
+      "homePct": 74,
+      "awayPct": 26
+    },
+    {
+      "home": "TB",
+      "away": "MIN",
+      "homePct": 53,
+      "awayPct": 47
+    },
+    {
+      "home": "DAL",
+      "away": "BAL",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "NO",
+      "away": "LV",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "DEN",
+      "away": "LA",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "CHI",
+      "away": "PHI",
+      "homePct": 52,
+      "awayPct": 48
+    }
+  ],
+  "4": [
+    {
+      "home": "CLE",
+      "away": "PIT",
+      "homePct": 49,
+      "awayPct": 51
+    },
+    {
+      "home": "WAS",
+      "away": "IND",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "BAL",
+      "away": "TEN",
+      "homePct": 74,
+      "awayPct": 26
+    },
+    {
+      "home": "BUF",
+      "away": "NE",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "CHI",
+      "away": "NYJ",
+      "homePct": 71,
+      "awayPct": 29
+    },
+    {
+      "home": "CIN",
+      "away": "JAX",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "HOU",
+      "away": "DAL",
+      "homePct": 67,
+      "awayPct": 33
+    },
+    {
+      "home": "NYG",
+      "away": "ARI",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "PHI",
+      "away": "LA",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "TB",
+      "away": "GB",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "MIN",
+      "away": "MIA",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "LV",
+      "away": "KC",
+      "homePct": 45,
+      "awayPct": 55
+    },
+    {
+      "home": "SEA",
+      "away": "LAC",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "SF",
+      "away": "DEN",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "CAR",
+      "away": "DET",
+      "homePct": 47,
+      "awayPct": 53
+    },
+    {
+      "home": "NO",
+      "away": "ATL",
+      "homePct": 55,
+      "awayPct": 45
+    }
+  ],
+  "5": [
+    {
+      "home": "DAL",
+      "away": "TB",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "JAX",
+      "away": "PHI",
+      "homePct": 53,
+      "awayPct": 47
+    },
+    {
+      "home": "MIA",
+      "away": "CIN",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "NE",
+      "away": "LV",
+      "homePct": 75,
+      "awayPct": 25
+    },
+    {
+      "home": "NO",
+      "away": "MIN",
+      "homePct": 48,
+      "awayPct": 52
+    },
+    {
+      "home": "NYJ",
+      "away": "CLE",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "PIT",
+      "away": "IND",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "TEN",
+      "away": "HOU",
+      "homePct": 39,
+      "awayPct": 61
+    },
+    {
+      "home": "WAS",
+      "away": "NYG",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "LAC",
+      "away": "DEN",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "ARI",
+      "away": "DET",
+      "homePct": 42,
+      "awayPct": 58
+    },
+    {
+      "home": "GB",
+      "away": "CHI",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "SEA",
+      "away": "SF",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "ATL",
+      "away": "BAL",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "LA",
+      "away": "BUF",
+      "homePct": 58,
+      "awayPct": 42
+    }
+  ],
+  "6": [
+    {
+      "home": "DEN",
+      "away": "SEA",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "JAX",
+      "away": "HOU",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "ATL",
+      "away": "CHI",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "CLE",
+      "away": "BAL",
+      "homePct": 48,
+      "awayPct": 52
+    },
+    {
+      "home": "IND",
+      "away": "TEN",
+      "homePct": 69,
+      "awayPct": 31
+    },
+    {
+      "home": "NE",
+      "away": "NYJ",
+      "homePct": 74,
+      "awayPct": 26
+    },
+    {
+      "home": "NYG",
+      "away": "NO",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "PHI",
+      "away": "CAR",
+      "homePct": 72,
+      "awayPct": 28
+    },
+    {
+      "home": "TB",
+      "away": "PIT",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "LA",
+      "away": "ARI",
+      "homePct": 76,
+      "awayPct": 24
+    },
+    {
+      "home": "KC",
+      "away": "LAC",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "LV",
+      "away": "BUF",
+      "homePct": 38,
+      "awayPct": 62
+    },
+    {
+      "home": "GB",
+      "away": "DAL",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "SF",
+      "away": "WAS",
+      "homePct": 68,
+      "awayPct": 32
+    }
+  ],
+  "7": [
+    {
+      "home": "CHI",
+      "away": "NE",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "NO",
+      "away": "PIT",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "ATL",
+      "away": "SF",
+      "homePct": 51,
+      "awayPct": 49
+    },
+    {
+      "home": "BAL",
+      "away": "CIN",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "CAR",
+      "away": "TB",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "HOU",
+      "away": "NYG",
+      "homePct": 74,
+      "awayPct": 26
+    },
+    {
+      "home": "MIN",
+      "away": "IND",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "NYJ",
+      "away": "MIA",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "TEN",
+      "away": "CLE",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "ARI",
+      "away": "DEN",
+      "homePct": 40,
+      "awayPct": 60
+    },
+    {
+      "home": "DET",
+      "away": "GB",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "LV",
+      "away": "LA",
+      "homePct": 39,
+      "awayPct": 61
+    },
+    {
+      "home": "SEA",
+      "away": "KC",
+      "homePct": 69,
+      "awayPct": 31
+    },
+    {
+      "home": "PHI",
+      "away": "DAL",
+      "homePct": 68,
+      "awayPct": 32
+    }
+  ],
+  "8": [
+    {
+      "home": "GB",
+      "away": "CAR",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "BUF",
+      "away": "BAL",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "CIN",
+      "away": "TEN",
+      "homePct": 69,
+      "awayPct": 31
+    },
+    {
+      "home": "DAL",
+      "away": "ARI",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "DET",
+      "away": "MIN",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "JAX",
+      "away": "IND",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "NYJ",
+      "away": "LV",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "PIT",
+      "away": "CLE",
+      "homePct": 69,
+      "awayPct": 31
+    },
+    {
+      "home": "TB",
+      "away": "ATL",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "LA",
+      "away": "LAC",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "DEN",
+      "away": "KC",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "MIA",
+      "away": "NE",
+      "homePct": 51,
+      "awayPct": 49
+    },
+    {
+      "home": "WAS",
+      "away": "PHI",
+      "homePct": 48,
+      "awayPct": 52
+    },
+    {
+      "home": "SEA",
+      "away": "CHI",
+      "homePct": 70,
+      "awayPct": 30
+    }
+  ],
+  "9": [
+    {
+      "home": "BAL",
+      "away": "JAX",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "ATL",
+      "away": "CIN",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "CAR",
+      "away": "DEN",
+      "homePct": 44,
+      "awayPct": 56
+    },
+    {
+      "home": "IND",
+      "away": "DAL",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "KC",
+      "away": "NYJ",
+      "homePct": 72,
+      "awayPct": 28
+    },
+    {
+      "home": "MIA",
+      "away": "DET",
+      "homePct": 51,
+      "awayPct": 49
+    },
+    {
+      "home": "NO",
+      "away": "CLE",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "PHI",
+      "away": "NYG",
+      "homePct": 76,
+      "awayPct": 24
+    },
+    {
+      "home": "WAS",
+      "away": "LA",
+      "homePct": 48,
+      "awayPct": 52
+    },
+    {
+      "home": "LAC",
+      "away": "HOU",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "SF",
+      "away": "LV",
+      "homePct": 75,
+      "awayPct": 25
+    },
+    {
+      "home": "NE",
+      "away": "GB",
+      "homePct": 62,
+      "awayPct": 38
+    },
+    {
+      "home": "SEA",
+      "away": "ARI",
+      "homePct": 79,
+      "awayPct": 21
+    },
+    {
+      "home": "CHI",
+      "away": "TB",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "MIN",
+      "away": "BUF",
+      "homePct": 54,
+      "awayPct": 46
+    }
+  ],
+  "10": [
+    {
+      "home": "NYG",
+      "away": "WAS",
+      "homePct": 52,
+      "awayPct": 48
+    },
+    {
+      "home": "DET",
+      "away": "NE",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "ATL",
+      "away": "KC",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "CLE",
+      "away": "HOU",
+      "homePct": 45,
+      "awayPct": 55
+    },
+    {
+      "home": "GB",
+      "away": "MIN",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "IND",
+      "away": "MIA",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "NO",
+      "away": "CAR",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "NYJ",
+      "away": "BUF",
+      "homePct": 38,
+      "awayPct": 62
+    },
+    {
+      "home": "TEN",
+      "away": "JAX",
+      "homePct": 44,
+      "awayPct": 56
+    },
+    {
+      "home": "ARI",
+      "away": "LA",
+      "homePct": 41,
+      "awayPct": 59
+    },
+    {
+      "home": "LV",
+      "away": "SEA",
+      "homePct": 35,
+      "awayPct": 65
+    },
+    {
+      "home": "DAL",
+      "away": "SF",
+      "homePct": 52,
+      "awayPct": 48
+    },
+    {
+      "home": "CIN",
+      "away": "PIT",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "BAL",
+      "away": "LAC",
+      "homePct": 59,
+      "awayPct": 41
+    }
+  ],
+  "11": [
+    {
+      "home": "HOU",
+      "away": "IND",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "BUF",
+      "away": "MIA",
+      "homePct": 70,
+      "awayPct": 30
+    },
+    {
+      "home": "CAR",
+      "away": "BAL",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "CHI",
+      "away": "NO",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "DAL",
+      "away": "TEN",
+      "homePct": 70,
+      "awayPct": 30
+    },
+    {
+      "home": "DET",
+      "away": "TB",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "KC",
+      "away": "ARI",
+      "homePct": 71,
+      "awayPct": 29
+    },
+    {
+      "home": "NYG",
+      "away": "JAX",
+      "homePct": 46,
+      "awayPct": 54
+    },
+    {
+      "home": "LAC",
+      "away": "NYJ",
+      "homePct": 73,
+      "awayPct": 27
+    },
+    {
+      "home": "DEN",
+      "away": "LV",
+      "homePct": 77,
+      "awayPct": 23
+    },
+    {
+      "home": "PHI",
+      "away": "PIT",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "SF",
+      "away": "MIN",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "WAS",
+      "away": "CIN",
+      "homePct": 58,
+      "awayPct": 42
+    }
+  ],
+  "12": [
+    {
+      "home": "LA",
+      "away": "GB",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "DET",
+      "away": "CHI",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "DAL",
+      "away": "PHI",
+      "homePct": 49,
+      "awayPct": 51
+    },
+    {
+      "home": "BUF",
+      "away": "KC",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "PIT",
+      "away": "DEN",
+      "homePct": 53,
+      "awayPct": 47
+    },
+    {
+      "home": "CIN",
+      "away": "NO",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "CLE",
+      "away": "LV",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "HOU",
+      "away": "BAL",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "IND",
+      "away": "NYG",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "MIA",
+      "away": "NYJ",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "MIN",
+      "away": "ATL",
+      "homePct": 66,
+      "awayPct": 34
+    },
+    {
+      "home": "JAX",
+      "away": "TEN",
+      "homePct": 73,
+      "awayPct": 27
+    },
+    {
+      "home": "ARI",
+      "away": "WAS",
+      "homePct": 52,
+      "awayPct": 48
+    },
+    {
+      "home": "SF",
+      "away": "SEA",
+      "homePct": 52,
+      "awayPct": 48
+    },
+    {
+      "home": "LAC",
+      "away": "NE",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "TB",
+      "away": "CAR",
+      "homePct": 64,
+      "awayPct": 36
+    }
+  ],
+  "13": [
+    {
+      "home": "LA",
+      "away": "KC",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "ATL",
+      "away": "DET",
+      "homePct": 51,
+      "awayPct": 49
+    },
+    {
+      "home": "CHI",
+      "away": "JAX",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "CLE",
+      "away": "CIN",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "NO",
+      "away": "GB",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "NYG",
+      "away": "SF",
+      "homePct": 43,
+      "awayPct": 57
+    },
+    {
+      "home": "TB",
+      "away": "LAC",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "TEN",
+      "away": "WAS",
+      "homePct": 49,
+      "awayPct": 51
+    },
+    {
+      "home": "ARI",
+      "away": "PHI",
+      "homePct": 40,
+      "awayPct": 60
+    },
+    {
+      "home": "DEN",
+      "away": "MIA",
+      "homePct": 69,
+      "awayPct": 31
+    },
+    {
+      "home": "MIN",
+      "away": "CAR",
+      "homePct": 70,
+      "awayPct": 30
+    },
+    {
+      "home": "NE",
+      "away": "BUF",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "PIT",
+      "away": "HOU",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "SEA",
+      "away": "DAL",
+      "homePct": 72,
+      "awayPct": 28
+    }
+  ],
+  "14": [
+    {
+      "home": "NE",
+      "away": "MIN",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "BAL",
+      "away": "TB",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "CAR",
+      "away": "NO",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "CLE",
+      "away": "ATL",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "DET",
+      "away": "TEN",
+      "homePct": 76,
+      "awayPct": 24
+    },
+    {
+      "home": "MIA",
+      "away": "CHI",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "NYJ",
+      "away": "DEN",
+      "homePct": 39,
+      "awayPct": 61
+    },
+    {
+      "home": "PHI",
+      "away": "IND",
+      "homePct": 70,
+      "awayPct": 30
+    },
+    {
+      "home": "WAS",
+      "away": "HOU",
+      "homePct": 49,
+      "awayPct": 51
+    },
+    {
+      "home": "LV",
+      "away": "LAC",
+      "homePct": 44,
+      "awayPct": 56
+    },
+    {
+      "home": "CIN",
+      "away": "KC",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "SEA",
+      "away": "NYG",
+      "homePct": 79,
+      "awayPct": 21
+    },
+    {
+      "home": "SF",
+      "away": "LA",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "GB",
+      "away": "BUF",
+      "homePct": 52,
+      "awayPct": 48
+    },
+    {
+      "home": "JAX",
+      "away": "PIT",
+      "homePct": 59,
+      "awayPct": 41
+    }
+  ],
+  "15": [
+    {
+      "home": "LAC",
+      "away": "SF",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "PHI",
+      "away": "SEA",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "BUF",
+      "away": "CHI",
+      "homePct": 67,
+      "awayPct": 33
+    },
+    {
+      "home": "CAR",
+      "away": "CIN",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "GB",
+      "away": "MIA",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "HOU",
+      "away": "JAX",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "NYG",
+      "away": "CLE",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "PIT",
+      "away": "BAL",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "TB",
+      "away": "NO",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "TEN",
+      "away": "IND",
+      "homePct": 49,
+      "awayPct": 51
+    },
+    {
+      "home": "WAS",
+      "away": "ATL",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "ARI",
+      "away": "NYJ",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "LA",
+      "away": "DAL",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "LV",
+      "away": "DEN",
+      "homePct": 39,
+      "awayPct": 61
+    },
+    {
+      "home": "MIN",
+      "away": "DET",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "KC",
+      "away": "NE",
+      "homePct": 56,
+      "awayPct": 44
+    }
+  ],
+  "16": [
+    {
+      "home": "PHI",
+      "away": "HOU",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "CHI",
+      "away": "GB",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "DEN",
+      "away": "BUF",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "SEA",
+      "away": "LA",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "ATL",
+      "away": "TB",
+      "homePct": 58,
+      "awayPct": 42
+    },
+    {
+      "home": "BAL",
+      "away": "CLE",
+      "homePct": 70,
+      "awayPct": 30
+    },
+    {
+      "home": "IND",
+      "away": "CIN",
+      "homePct": 59,
+      "awayPct": 41
+    },
+    {
+      "home": "MIA",
+      "away": "LAC",
+      "homePct": 53,
+      "awayPct": 47
+    },
+    {
+      "home": "MIN",
+      "away": "WAS",
+      "homePct": 67,
+      "awayPct": 33
+    },
+    {
+      "home": "NO",
+      "away": "ARI",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "NYJ",
+      "away": "NE",
+      "homePct": 42,
+      "awayPct": 58
+    },
+    {
+      "home": "PIT",
+      "away": "CAR",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "LV",
+      "away": "TEN",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "KC",
+      "away": "SF",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "DAL",
+      "away": "JAX",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "DET",
+      "away": "NYG",
+      "homePct": 74,
+      "awayPct": 26
+    }
+  ],
+  "17": [
+    {
+      "home": "CIN",
+      "away": "BAL",
+      "homePct": 53,
+      "awayPct": 47
+    },
+    {
+      "home": "ATL",
+      "away": "NO",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "CAR",
+      "away": "SEA",
+      "homePct": 40,
+      "awayPct": 60
+    },
+    {
+      "home": "CLE",
+      "away": "IND",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "DAL",
+      "away": "NYG",
+      "homePct": 68,
+      "awayPct": 32
+    },
+    {
+      "home": "JAX",
+      "away": "WAS",
+      "homePct": 65,
+      "awayPct": 35
+    },
+    {
+      "home": "LAC",
+      "away": "KC",
+      "homePct": 61,
+      "awayPct": 39
+    },
+    {
+      "home": "MIA",
+      "away": "BUF",
+      "homePct": 47,
+      "awayPct": 53
+    },
+    {
+      "home": "NE",
+      "away": "DEN",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "NYJ",
+      "away": "MIN",
+      "homePct": 43,
+      "awayPct": 57
+    },
+    {
+      "home": "TB",
+      "away": "LA",
+      "homePct": 50,
+      "awayPct": 50
+    },
+    {
+      "home": "TEN",
+      "away": "PIT",
+      "homePct": 43,
+      "awayPct": 57
+    },
+    {
+      "home": "ARI",
+      "away": "LV",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "CHI",
+      "away": "DET",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "SF",
+      "away": "PHI",
+      "homePct": 57,
+      "awayPct": 43
+    },
+    {
+      "home": "GB",
+      "away": "HOU",
+      "homePct": 55,
+      "awayPct": 45
+    }
+  ],
+  "18": [
+    {
+      "home": "ARI",
+      "away": "SF",
+      "homePct": 43,
+      "awayPct": 57
+    },
+    {
+      "home": "BAL",
+      "away": "PIT",
+      "homePct": 60,
+      "awayPct": 40
+    },
+    {
+      "home": "BUF",
+      "away": "NYJ",
+      "homePct": 77,
+      "awayPct": 23
+    },
+    {
+      "home": "CAR",
+      "away": "ATL",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "CIN",
+      "away": "CLE",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "DEN",
+      "away": "LAC",
+      "homePct": 64,
+      "awayPct": 36
+    },
+    {
+      "home": "GB",
+      "away": "DET",
+      "homePct": 56,
+      "awayPct": 44
+    },
+    {
+      "home": "HOU",
+      "away": "TEN",
+      "homePct": 77,
+      "awayPct": 23
+    },
+    {
+      "home": "IND",
+      "away": "JAX",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "KC",
+      "away": "LV",
+      "homePct": 72,
+      "awayPct": 28
+    },
+    {
+      "home": "LA",
+      "away": "SEA",
+      "homePct": 55,
+      "awayPct": 45
+    },
+    {
+      "home": "MIN",
+      "away": "CHI",
+      "homePct": 63,
+      "awayPct": 37
+    },
+    {
+      "home": "NE",
+      "away": "MIA",
+      "homePct": 67,
+      "awayPct": 33
+    },
+    {
+      "home": "NO",
+      "away": "TB",
+      "homePct": 54,
+      "awayPct": 46
+    },
+    {
+      "home": "NYG",
+      "away": "PHI",
+      "homePct": 41,
+      "awayPct": 59
+    },
+    {
+      "home": "WAS",
+      "away": "DAL",
+      "homePct": 57,
+      "awayPct": 43
+    }
+  ]
+}
