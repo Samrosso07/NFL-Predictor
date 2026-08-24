@@ -1,130 +1,258 @@
-{
-  "SEA": {
-    "w": 10.6,
-    "l": 6.4
-  },
-  "PHI": {
-    "w": 10.2,
-    "l": 6.8
-  },
-  "DET": {
-    "w": 9.9,
-    "l": 7.1
-  },
-  "BUF": {
+[
+  {
+    "abbr": "BUF",
+    "conf": "AFC",
+    "div": "East",
     "w": 9.8,
-    "l": 7.2
+    "l": 7.2,
+    "po_pct": 73.2
   },
-  "DEN": {
-    "w": 9.8,
-    "l": 7.2
-  },
-  "LA": {
-    "w": 9.7,
-    "l": 7.3
-  },
-  "HOU": {
-    "w": 9.7,
-    "l": 7.3
-  },
-  "SF": {
-    "w": 9.4,
-    "l": 7.6
-  },
-  "MIN": {
-    "w": 9.3,
-    "l": 7.7
-  },
-  "BAL": {
-    "w": 9.2,
-    "l": 7.8
-  },
-  "NE": {
-    "w": 9.1,
-    "l": 7.9
-  },
-  "JAX": {
-    "w": 9.0,
-    "l": 8.0
-  },
-  "PIT": {
-    "w": 9.0,
-    "l": 8.0
-  },
-  "GB": {
-    "w": 8.8,
-    "l": 8.2
-  },
-  "LAC": {
-    "w": 8.7,
-    "l": 8.3
-  },
-  "KC": {
-    "w": 8.6,
-    "l": 8.4
-  },
-  "TB": {
-    "w": 8.5,
-    "l": 8.5
-  },
-  "ATL": {
-    "w": 8.4,
-    "l": 8.6
-  },
-  "CHI": {
-    "w": 8.4,
-    "l": 8.6
-  },
-  "CIN": {
-    "w": 8.3,
-    "l": 8.7
-  },
-  "DAL": {
-    "w": 8.3,
-    "l": 8.7
-  },
-  "IND": {
-    "w": 8.1,
-    "l": 8.9
-  },
-  "WAS": {
-    "w": 8.0,
-    "l": 9.0
-  },
-  "NO": {
-    "w": 7.9,
-    "l": 9.1
-  },
-  "MIA": {
+  {
+    "abbr": "MIA",
+    "conf": "AFC",
+    "div": "East",
     "w": 7.8,
-    "l": 9.2
+    "l": 9.2,
+    "po_pct": 38.7
   },
-  "CLE": {
+  {
+    "abbr": "NE",
+    "conf": "AFC",
+    "div": "East",
+    "w": 9.1,
+    "l": 7.9,
+    "po_pct": 58.6
+  },
+  {
+    "abbr": "NYJ",
+    "conf": "AFC",
+    "div": "East",
+    "w": 6.5,
+    "l": 10.5,
+    "po_pct": 17.9
+  },
+  {
+    "abbr": "BAL",
+    "conf": "AFC",
+    "div": "North",
+    "w": 9.2,
+    "l": 7.8,
+    "po_pct": 59.7
+  },
+  {
+    "abbr": "CIN",
+    "conf": "AFC",
+    "div": "North",
+    "w": 8.3,
+    "l": 8.7,
+    "po_pct": 43.3
+  },
+  {
+    "abbr": "CLE",
+    "conf": "AFC",
+    "div": "North",
     "w": 7.6,
-    "l": 9.4
+    "l": 9.4,
+    "po_pct": 31.0
   },
-  "CAR": {
-    "w": 7.4,
-    "l": 9.6
+  {
+    "abbr": "PIT",
+    "conf": "AFC",
+    "div": "North",
+    "w": 9.0,
+    "l": 8.0,
+    "po_pct": 51.9
   },
-  "NYG": {
-    "w": 6.9,
-    "l": 10.1
+  {
+    "abbr": "HOU",
+    "conf": "AFC",
+    "div": "South",
+    "w": 9.8,
+    "l": 7.2,
+    "po_pct": 66.2
   },
-  "ARI": {
+  {
+    "abbr": "IND",
+    "conf": "AFC",
+    "div": "South",
+    "w": 8.1,
+    "l": 8.9,
+    "po_pct": 36.7
+  },
+  {
+    "abbr": "JAX",
+    "conf": "AFC",
+    "div": "South",
+    "w": 8.9,
+    "l": 8.1,
+    "po_pct": 48.7
+  },
+  {
+    "abbr": "TEN",
+    "conf": "AFC",
+    "div": "South",
     "w": 6.5,
-    "l": 10.5
+    "l": 10.5,
+    "po_pct": 14.3
   },
-  "NYJ": {
-    "w": 6.5,
-    "l": 10.5
+  {
+    "abbr": "DEN",
+    "conf": "AFC",
+    "div": "West",
+    "w": 9.8,
+    "l": 7.2,
+    "po_pct": 64.2
   },
-  "TEN": {
-    "w": 6.4,
-    "l": 10.6
+  {
+    "abbr": "KC",
+    "conf": "AFC",
+    "div": "West",
+    "w": 8.6,
+    "l": 8.4,
+    "po_pct": 41.5
   },
-  "LV": {
+  {
+    "abbr": "LV",
+    "conf": "AFC",
+    "div": "West",
     "w": 6.3,
-    "l": 10.7
+    "l": 10.7,
+    "po_pct": 12.1
+  },
+  {
+    "abbr": "LAC",
+    "conf": "AFC",
+    "div": "West",
+    "w": 8.8,
+    "l": 8.2,
+    "po_pct": 41.9
+  },
+  {
+    "abbr": "DAL",
+    "conf": "NFC",
+    "div": "East",
+    "w": 8.3,
+    "l": 8.7,
+    "po_pct": 45.6
+  },
+  {
+    "abbr": "NYG",
+    "conf": "NFC",
+    "div": "East",
+    "w": 6.9,
+    "l": 10.1,
+    "po_pct": 22.8
+  },
+  {
+    "abbr": "PHI",
+    "conf": "NFC",
+    "div": "East",
+    "w": 10.2,
+    "l": 6.8,
+    "po_pct": 71.8
+  },
+  {
+    "abbr": "WAS",
+    "conf": "NFC",
+    "div": "East",
+    "w": 8.1,
+    "l": 8.9,
+    "po_pct": 37.0
+  },
+  {
+    "abbr": "CHI",
+    "conf": "NFC",
+    "div": "North",
+    "w": 8.4,
+    "l": 8.6,
+    "po_pct": 41.5
+  },
+  {
+    "abbr": "DET",
+    "conf": "NFC",
+    "div": "North",
+    "w": 9.8,
+    "l": 7.2,
+    "po_pct": 63.4
+  },
+  {
+    "abbr": "GB",
+    "conf": "NFC",
+    "div": "North",
+    "w": 8.8,
+    "l": 8.2,
+    "po_pct": 45.0
+  },
+  {
+    "abbr": "MIN",
+    "conf": "NFC",
+    "div": "North",
+    "w": 9.3,
+    "l": 7.7,
+    "po_pct": 52.7
+  },
+  {
+    "abbr": "ATL",
+    "conf": "NFC",
+    "div": "South",
+    "w": 8.4,
+    "l": 8.6,
+    "po_pct": 43.2
+  },
+  {
+    "abbr": "CAR",
+    "conf": "NFC",
+    "div": "South",
+    "w": 7.4,
+    "l": 9.6,
+    "po_pct": 25.6
+  },
+  {
+    "abbr": "NO",
+    "conf": "NFC",
+    "div": "South",
+    "w": 8.0,
+    "l": 9.0,
+    "po_pct": 32.4
+  },
+  {
+    "abbr": "TB",
+    "conf": "NFC",
+    "div": "South",
+    "w": 8.5,
+    "l": 8.5,
+    "po_pct": 39.1
+  },
+  {
+    "abbr": "ARI",
+    "conf": "NFC",
+    "div": "West",
+    "w": 6.5,
+    "l": 10.5,
+    "po_pct": 12.2
+  },
+  {
+    "abbr": "LA",
+    "conf": "NFC",
+    "div": "West",
+    "w": 9.6,
+    "l": 7.4,
+    "po_pct": 53.5
+  },
+  {
+    "abbr": "SF",
+    "conf": "NFC",
+    "div": "West",
+    "w": 9.3,
+    "l": 7.7,
+    "po_pct": 47.4
+  },
+  {
+    "abbr": "SEA",
+    "conf": "NFC",
+    "div": "West",
+    "w": 10.6,
+    "l": 6.4,
+    "po_pct": 66.9
   }
-}
+]

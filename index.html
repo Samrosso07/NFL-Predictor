@@ -162,7 +162,7 @@
   }
 </style>
 </head>
-<body>
+<body data-theme="dark">
 <div class="wrap">
 
   <header>
@@ -196,6 +196,7 @@
             <th>Div.</th>
             <th class="num">V. Esperadas</th>
             <th class="num">D. Esperadas</th>
+            <th class="num">Prob. Playoffs</th>
           </tr>
         </thead>
         <tbody id="standings-body"></tbody>
@@ -219,45 +220,45 @@
 <script>
 // ---------------- DATA ----------------
 const TEAMS = [
-  {abbr:'BUF',name:'Buffalo Bills',conf:'AFC',div:'Este',color:'#00338D'},
-  {abbr:'MIA',name:'Miami Dolphins',conf:'AFC',div:'Este',color:'#008E97'},
-  {abbr:'NE', name:'New England Patriots',conf:'AFC',div:'Este',color:'#002244'},
-  {abbr:'NYJ',name:'New York Jets',conf:'AFC',div:'Este',color:'#125740'},
+  {abbr:'BUF',name:'Buffalo Bills',conf:'AFC',div:'Este',color:'#00338D',color2:'#C60C30'},
+  {abbr:'MIA',name:'Miami Dolphins',conf:'AFC',div:'Este',color:'#008E97', color2: '#FC4C02'},
+  {abbr:'NE', name:'New England Patriots',conf:'AFC',div:'Este',color:'#002244',color2: '#C60C30'},
+  {abbr:'NYJ',name:'New York Jets',conf:'AFC',div:'Este',color:'#125740',color2: '#000000'},
 
-  {abbr:'BAL',name:'Baltimore Ravens',conf:'AFC',div:'Norte',color:'#241773'},
-  {abbr:'PIT',name:'Pittsburgh Steelers',conf:'AFC',div:'Norte',color:'#FFB612'},
-  {abbr:'CIN',name:'Cincinnati Bengals',conf:'AFC',div:'Norte',color:'#FB4F14'},
-  {abbr:'CLE',name:'Cleveland Browns',conf:'AFC',div:'Norte',color:'#311D00'},
+  {abbr:'BAL',name:'Baltimore Ravens',conf:'AFC',div:'Norte',color:'#241773',color2: '#000000'},
+  {abbr:'PIT',name:'Pittsburgh Steelers',conf:'AFC',div:'Norte',color:'#FFB612',color2: '#000000'},
+  {abbr:'CIN',name:'Cincinnati Bengals',conf:'AFC',div:'Norte',color:'#FB4F14',color2: '#000000'},
+  {abbr:'CLE',name:'Cleveland Browns',conf:'AFC',div:'Norte',color:'#311D00',color2: '#FF3C00'},
 
-  {abbr:'HOU',name:'Houston Texans',conf:'AFC',div:'Sur',color:'#03202F'},
-  {abbr:'JAX',name:'Jacksonville Jaguars',conf:'AFC',div:'Sur',color:'#9F792C'},
-  {abbr:'IND',name:'Indianapolis Colts',conf:'AFC',div:'Sur',color:'#002C5F'},
-  {abbr:'TEN',name:'Tennessee Titans',conf:'AFC',div:'Sur',color:'#4B92DB'},
+  {abbr:'HOU',name:'Houston Texans',conf:'AFC',div:'Sur',color:'#A71930',color2: '#03202F'},
+  {abbr:'JAX',name:'Jacksonville Jaguars',conf:'AFC',div:'Sur',color:'#006778',color2: '#9F792C'},
+  {abbr:'IND',name:'Indianapolis Colts',conf:'AFC',div:'Sur',color:'#002C5F',color2: '#B0B7BC'},
+  {abbr:'TEN',name:'Tennessee Titans',conf:'AFC',div:'Sur',color:'#4B92DB',color2: '#0C2340'},
 
-  {abbr:'KC', name:'Kansas City Chiefs',conf:'AFC',div:'Oeste',color:'#E31837'},
-  {abbr:'LAC',name:'Los Angeles Chargers',conf:'AFC',div:'Oeste',color:'#0080C6'},
-  {abbr:'DEN',name:'Denver Broncos',conf:'AFC',div:'Oeste',color:'#FB4F14'},
-  {abbr:'LV', name:'Las Vegas Raiders',conf:'AFC',div:'Oeste',color:'#000000'},
+  {abbr:'KC', name:'Kansas City Chiefs',conf:'AFC',div:'Oeste',color:'#E31837',color2: '#FFB81C'},
+  {abbr:'LAC',name:'Los Angeles Chargers',conf:'AFC',div:'Oeste',color:'#0080C6',color2: '#FFC20E'},
+  {abbr:'DEN',name:'Denver Broncos',conf:'AFC',div:'Oeste',color:'#FB4F14',color2: '#002244'},
+  {abbr:'LV', name:'Las Vegas Raiders',conf:'AFC',div:'Oeste',color:'#000000',color2: '#A5ACAF'},
 
-  {abbr:'DAL',name:'Dallas Cowboys',conf:'NFC',div:'Este',color:'#869397'},
-  {abbr:'PHI',name:'Philadelphia Eagles',conf:'NFC',div:'Este',color:'#004C54'},
-  {abbr:'WAS',name:'Washington Commanders',conf:'NFC',div:'Este',color:'#5A1414'},
-  {abbr:'NYG',name:'New York Giants',conf:'NFC',div:'Este',color:'#0B2265'},
+  {abbr:'DAL',name:'Dallas Cowboys',conf:'NFC',div:'Este',color:'#869397',color2: '#041E42'},
+  {abbr:'PHI',name:'Philadelphia Eagles',conf:'NFC',div:'Este',color:'#004C54',color2: '#A5ACAF'},
+  {abbr:'WAS',name:'Washington Commanders',conf:'NFC',div:'Este',color:'#5A1414',color2: '#FFB612'},
+  {abbr:'NYG',name:'New York Giants',conf:'NFC',div:'Este',color:'#0B2265',color2: '#A71930'},
 
-  {abbr:'DET',name:'Detroit Lions',conf:'NFC',div:'Norte',color:'#0076B6'},
-  {abbr:'GB', name:'Green Bay Packers',conf:'NFC',div:'Norte',color:'#203731'},
-  {abbr:'MIN',name:'Minnesota Vikings',conf:'NFC',div:'Norte',color:'#4F2683'},
-  {abbr:'CHI',name:'Chicago Bears',conf:'NFC',div:'Norte',color:'#0B162A'},
+  {abbr:'DET',name:'Detroit Lions',conf:'NFC',div:'Norte',color:'#0076B6',color2: '#B0B7BC'},
+  {abbr:'GB', name:'Green Bay Packers',conf:'NFC',div:'Norte',color:'#203731',color2:'#FFB612'},
+  {abbr:'MIN',name:'Minnesota Vikings',conf:'NFC',div:'Norte',color:'#4F2683',color2: '#FFC62F'},
+  {abbr:'CHI',name:'Chicago Bears',conf:'NFC',div:'Norte',color:'#0B162A',color2: '#C83803'},
 
-  {abbr:'TB', name:'Tampa Bay Buccaneers',conf:'NFC',div:'Sur',color:'#D50A0A'},
-  {abbr:'ATL',name:'Atlanta Falcons',conf:'NFC',div:'Sur',color:'#A71930'},
-  {abbr:'NO', name:'New Orleans Saints',conf:'NFC',div:'Sur',color:'#D3BC8D'},
-  {abbr:'CAR',name:'Carolina Panthers',conf:'NFC',div:'Sur',color:'#0085CA'},
+  {abbr:'TB', name:'Tampa Bay Buccaneers',conf:'NFC',div:'Sur',color:'#D50A0A',color2: '#0A0A08'},
+  {abbr:'ATL',name:'Atlanta Falcons',conf:'NFC',div:'Sur',color:'#A71930',color2: '#000000'},
+  {abbr:'NO', name:'New Orleans Saints',conf:'NFC',div:'Sur',color:'#D3BC8D',color2: '#101820'},
+  {abbr:'CAR',name:'Carolina Panthers',conf:'NFC',div:'Sur',color:'#0085CA',color2: '#101820'},
 
-  {abbr:'SF', name:'San Francisco 49ers',conf:'NFC',div:'Oeste',color:'#AA0000'},
-  {abbr:'LA',name:'Los Angeles Rams',conf:'NFC',div:'Oeste',color:'#003594'},
-  {abbr:'SEA',name:'Seattle Seahawks',conf:'NFC',div:'Oeste',color:'#7AC142'},
-  {abbr:'ARI',name:'Arizona Cardinals',conf:'NFC',div:'Oeste',color:'#97233F'},
+  {abbr:'SF', name:'San Francisco 49ers',conf:'NFC',div:'Oeste',color:'#AA0000',color2: '#B3995D'},
+  {abbr:'LA',name:'Los Angeles Rams',conf:'NFC',div:'Oeste',color:'#003594',color2: '	#FFA300'},
+  {abbr:'SEA',name:'Seattle Seahawks',conf:'NFC',div:'Oeste',color:'#69BE28',color2: '#002244'},
+  {abbr:'ARI',name:'Arizona Cardinals',conf:'NFC',div:'Oeste',color:'#97233F',color2: '#FFB612'},
 ];
 // w (victorias esperadas) y l (derrotas esperadas) ya NO están fijos aquí —
 // se completan al vuelo con los datos reales de standings.json (ver cargarDatos)
@@ -276,23 +277,6 @@ function matchupsForWeek(week){
   }));
 }
 
-async function cargarDatos(){
-  const [standingsRes, matchupsRes] = await Promise.all([
-    fetch('standings.json'),
-    fetch('matchups.json')
-  ]);
-  const standings = await standingsRes.json();
-  MATCHUPS_BY_WEEK = await matchupsRes.json();
-
-  TEAMS.forEach(t => {
-    const rec = standings[t.abbr];
-    if(rec){ t.w = rec.w; t.l = rec.l; }
-  });
-
-  renderStandings();
-  renderWeekList();
-  renderMatchups();
-}
 
 // ---------------- STANDINGS ----------------
 let grouping = 'league';
@@ -301,7 +285,9 @@ function setGrouping(g){
   document.querySelectorAll('.segbtn').forEach(b=>b.classList.toggle('active', b.dataset.group===g));
   renderStandings();
 }
-function badge(team){ return `<span class="badge" style="background:${team.color}">${team.abbr}</span>`; }
+function badge(team){ 
+  return `<span class="badge" style="background:${team.color}; color:${team.color2};">${team.abbr}</span>`; 
+}
 function teamRow(t){
   return `<tr>
     <td><div class="teamcell">${badge(t)}<span class="teamname">${t.name}</span></div>
@@ -311,6 +297,7 @@ function teamRow(t){
     <td class="tag">${t.div}</td>
     <td class="num">${t.w.toFixed(1)}</td>
     <td class="num">${t.l.toFixed(1)}</td>
+    <td class="num" style="color: var(--accent); font-weight: bold;">${t.po_pct}%</td>
   </tr>`;
 }
 function renderStandings(){
@@ -321,13 +308,13 @@ function renderStandings(){
     html = sorted.map(teamRow).join('');
   } else if(grouping==='conference'){
     ['AFC','NFC'].forEach(conf=>{
-      html += `<tr class="divheader"><td colspan="5">${conf}</td></tr>`;
+      html += `<tr class="divheader"><td colspan="6">${conf}</td></tr>`;
       html += sorted.filter(t=>t.conf===conf).map(teamRow).join('');
     });
   } else {
     ['AFC','NFC'].forEach(conf=>{
       ['Este','Norte','Sur','Oeste'].forEach(div=>{
-        html += `<tr class="divheader"><td colspan="5">${conf} ${div}</td></tr>`;
+        html += `<tr class="divheader"><td colspan="6">${conf} ${div}</td></tr>`;
         html += sorted.filter(t=>t.conf===conf && t.div===div).map(teamRow).join('');
       });
     });
@@ -385,7 +372,39 @@ function toggleTheme(){
   html.setAttribute('data-theme', html.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
 }
 
-cargarDatos();
+async function cargarDatosReales() {
+  try {
+    // 1. Cargar el JSON de la tabla (Standings)
+    const respuestaStandings = await fetch('standings.json');
+    const datosSimulados = await respuestaStandings.json();
+    
+    TEAMS.forEach(equipoVisual => {
+      const datosEquipo = datosSimulados.find(d => d.abbr === equipoVisual.abbr);
+      if(datosEquipo) {
+        equipoVisual.w = datosEquipo.w;
+        equipoVisual.l = datosEquipo.l;
+        equipoVisual.po_pct = datosEquipo.po_pct;
+      }
+    });
+
+    // 2. Cargar el JSON de los partidos (Matchups)
+    const respuestaMatchups = await fetch('matchups.json');
+    MATCHUPS_BY_WEEK = await respuestaMatchups.json();
+    
+    // 3. Dibujar todo en pantalla con los datos reales
+    renderStandings();
+    renderWeekList();
+    renderMatchups();
+    
+  } catch (error) {
+    console.error("Error cargando los JSONs. Asegúrate de correr el servidor local:", error);
+  }
+}
+
+// Inicializar la app
+cargarDatosReales();
+renderWeekList();
+renderMatchups();
 </script>
 </body>
 </html>
