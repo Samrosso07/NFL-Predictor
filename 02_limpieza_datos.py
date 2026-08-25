@@ -36,10 +36,10 @@ def estandarizar(df, mapeo=MAPEO_EQUIPOS):
 
 
 def limpiar_datos(
-    ruta_historico="/data/nfl_partidos_historico.csv",
-    ruta_2026="/data/nfl_calendario_2026.csv",
-    ruta_hist_clean="/data/nfl_historico_clean.csv",
-    ruta_2026_clean="/data/nfl_calendario_2026_clean.csv",
+    ruta_historico="data/nfl_partidos_historico.csv",
+    ruta_2026="data/nfl_calendario_2026.csv",
+    ruta_hist_clean="data/nfl_historico_clean.csv",
+    ruta_2026_clean="data/nfl_calendario_2026_clean.csv",
 ):
     df_historico = pd.read_csv(ruta_historico)
     df_2026 = pd.read_csv(ruta_2026)
