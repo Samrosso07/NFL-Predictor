@@ -30,8 +30,8 @@ nfl_estructura = {
 
 # 2. Cargar Datos Base
 print("Cargando datos base...")
-df_hist = pd.read_csv("Data/nfl_historico_con_elo.csv")
-df_cal = pd.read_csv("Data/nfl_calendario_2026_clean.csv")
+df_hist = pd.read_csv("data/nfl_historico_con_elo.csv")
+df_cal = pd.read_csv("data/nfl_calendario_2026_clean.csv")
 
 # Extraer Elo base 2026 (reseteado)
 equipos = list(nfl_estructura.keys())
