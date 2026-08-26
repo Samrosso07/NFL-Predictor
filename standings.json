@@ -13,15 +13,15 @@
     "div": "East",
     "w": 7.8,
     "l": 9.2,
-    "po_pct": 38.8
+    "po_pct": 39.2
   },
   {
     "abbr": "NE",
     "conf": "AFC",
     "div": "East",
-    "w": 9.0,
-    "l": 8.0,
-    "po_pct": 57.6
+    "w": 9.1,
+    "l": 7.9,
+    "po_pct": 59.0
   },
   {
     "abbr": "NYJ",
@@ -29,7 +29,7 @@
     "div": "East",
     "w": 6.5,
     "l": 10.5,
-    "po_pct": 19.3
+    "po_pct": 18.1
   },
   {
     "abbr": "BAL",
@@ -37,7 +37,7 @@
     "div": "North",
     "w": 9.2,
     "l": 7.8,
-    "po_pct": 60.0
+    "po_pct": 59.5
   },
   {
     "abbr": "CIN",
@@ -45,7 +45,7 @@
     "div": "North",
     "w": 8.3,
     "l": 8.7,
-    "po_pct": 43.3
+    "po_pct": 43.4
   },
   {
     "abbr": "CLE",
@@ -53,7 +53,7 @@
     "div": "North",
     "w": 7.6,
     "l": 9.4,
-    "po_pct": 31.8
+    "po_pct": 32.1
   },
   {
     "abbr": "PIT",
@@ -61,7 +61,7 @@
     "div": "North",
     "w": 9.0,
     "l": 8.0,
-    "po_pct": 51.6
+    "po_pct": 51.4
   },
   {
     "abbr": "HOU",
@@ -69,7 +69,7 @@
     "div": "South",
     "w": 9.7,
     "l": 7.3,
-    "po_pct": 65.4
+    "po_pct": 65.0
   },
   {
     "abbr": "IND",
@@ -77,39 +77,39 @@
     "div": "South",
     "w": 8.1,
     "l": 8.9,
-    "po_pct": 36.7
+    "po_pct": 35.9
   },
   {
     "abbr": "JAX",
     "conf": "AFC",
     "div": "South",
-    "w": 9.0,
-    "l": 8.0,
-    "po_pct": 49.1
+    "w": 8.9,
+    "l": 8.1,
+    "po_pct": 49.0
   },
   {
     "abbr": "TEN",
     "conf": "AFC",
     "div": "South",
-    "w": 6.4,
-    "l": 10.6,
-    "po_pct": 13.8
+    "w": 6.5,
+    "l": 10.5,
+    "po_pct": 14.6
   },
   {
     "abbr": "DEN",
     "conf": "AFC",
     "div": "West",
-    "w": 9.8,
-    "l": 7.2,
-    "po_pct": 63.4
+    "w": 9.7,
+    "l": 7.3,
+    "po_pct": 63.2
   },
   {
     "abbr": "KC",
     "conf": "AFC",
     "div": "West",
-    "w": 8.6,
-    "l": 8.4,
-    "po_pct": 42.7
+    "w": 8.7,
+    "l": 8.3,
+    "po_pct": 42.6
   },
   {
     "abbr": "LV",
@@ -117,15 +117,15 @@
     "div": "West",
     "w": 6.3,
     "l": 10.7,
-    "po_pct": 11.5
+    "po_pct": 12.5
   },
   {
     "abbr": "LAC",
     "conf": "AFC",
     "div": "West",
-    "w": 8.8,
-    "l": 8.2,
-    "po_pct": 42.3
+    "w": 8.7,
+    "l": 8.3,
+    "po_pct": 41.6
   },
   {
     "abbr": "DAL",
@@ -133,7 +133,7 @@
     "div": "East",
     "w": 8.3,
     "l": 8.7,
-    "po_pct": 45.4
+    "po_pct": 45.7
   },
   {
     "abbr": "NYG",
@@ -141,7 +141,7 @@
     "div": "East",
     "w": 6.9,
     "l": 10.1,
-    "po_pct": 21.8
+    "po_pct": 22.2
   },
   {
     "abbr": "PHI",
@@ -149,15 +149,15 @@
     "div": "East",
     "w": 10.2,
     "l": 6.8,
-    "po_pct": 72.2
+    "po_pct": 71.7
   },
   {
     "abbr": "WAS",
     "conf": "NFC",
     "div": "East",
-    "w": 8.1,
-    "l": 8.9,
-    "po_pct": 37.3
+    "w": 8.0,
+    "l": 9.0,
+    "po_pct": 37.0
   },
   {
     "abbr": "CHI",
@@ -165,7 +165,7 @@
     "div": "North",
     "w": 8.4,
     "l": 8.6,
-    "po_pct": 41.1
+    "po_pct": 41.4
   },
   {
     "abbr": "DET",
@@ -173,7 +173,7 @@
     "div": "North",
     "w": 9.8,
     "l": 7.2,
-    "po_pct": 64.1
+    "po_pct": 63.1
   },
   {
     "abbr": "GB",
@@ -181,7 +181,7 @@
     "div": "North",
     "w": 8.8,
     "l": 8.2,
-    "po_pct": 44.6
+    "po_pct": 44.8
   },
   {
     "abbr": "MIN",
@@ -189,15 +189,15 @@
     "div": "North",
     "w": 9.3,
     "l": 7.7,
-    "po_pct": 51.8
+    "po_pct": 52.4
   },
   {
     "abbr": "ATL",
     "conf": "NFC",
     "div": "South",
-    "w": 8.3,
-    "l": 8.7,
-    "po_pct": 42.9
+    "w": 8.4,
+    "l": 8.6,
+    "po_pct": 43.2
   },
   {
     "abbr": "CAR",
@@ -205,7 +205,7 @@
     "div": "South",
     "w": 7.4,
     "l": 9.6,
-    "po_pct": 26.6
+    "po_pct": 26.3
   },
   {
     "abbr": "NO",
@@ -213,7 +213,7 @@
     "div": "South",
     "w": 7.9,
     "l": 9.1,
-    "po_pct": 32.3
+    "po_pct": 32.2
   },
   {
     "abbr": "TB",
@@ -221,7 +221,7 @@
     "div": "South",
     "w": 8.5,
     "l": 8.5,
-    "po_pct": 39.4
+    "po_pct": 39.1
   },
   {
     "abbr": "ARI",
@@ -229,7 +229,7 @@
     "div": "West",
     "w": 6.5,
     "l": 10.5,
-    "po_pct": 12.3
+    "po_pct": 12.5
   },
   {
     "abbr": "LA",
@@ -237,7 +237,7 @@
     "div": "West",
     "w": 9.6,
     "l": 7.4,
-    "po_pct": 54.2
+    "po_pct": 54.3
   },
   {
     "abbr": "SF",
@@ -245,7 +245,7 @@
     "div": "West",
     "w": 9.4,
     "l": 7.6,
-    "po_pct": 47.6
+    "po_pct": 47.5
   },
   {
     "abbr": "SEA",
@@ -253,6 +253,6 @@
     "div": "West",
     "w": 10.6,
     "l": 6.4,
-    "po_pct": 66.3
+    "po_pct": 66.5
   }
 ]
