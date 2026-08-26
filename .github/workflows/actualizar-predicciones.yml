@@ -1,59 +1,65 @@
 name: Actualizar predicciones NFL
- 
+
 on:
   # Disparador por horario (cron). GitHub Actions usa UTC.
   # 0 13 * * 2  ->  martes a la 1:00 PM UTC = 8:00 AM hora Colombia (UTC-5)
   schedule:
     - cron: "0 13 * * 2"
- 
+
   # Disparador manual desde la pestaña "Actions" en GitHub, para probar
   # sin esperar al martes.
   workflow_dispatch:
- 
+
 # Permiso de escritura necesario para que el workflow pueda hacer commit
 # de los JSON/CSV actualizados. GITHUB_TOKEN lo provee GitHub automáticamente.
 permissions:
   contents: write
- 
+
 jobs:
   actualizar-datos:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v4
- 
+
       - name: Configurar Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
- 
+
       - name: Instalar dependencias
         run: pip install -r requirements.txt
- 
+
       - name: Paso 1 - Descargar/actualizar datos
         run: python 01_exploracion_datos.py
- 
+
       - name: Paso 2 - Limpieza de datos
         run: python 02_limpieza_datos.py
- 
+
       - name: Paso 3 - Recalcular modelo Elo
         run: python 03_modelo_elo.py
- 
+
       - name: Paso 4 - Recalcular predicciones 2026
         run: python 04_predicciones_2026.py
- 
+
+      # Genera standings.json (sin po_pct, temporalmente) y matchups.json
       - name: Paso 5 - Exportar JSON base para la interfaz
         run: python exportar_datos_interfaz.py
- 
-      - name: Paso 6 - Simulacion Monte Carlo (agrega po_pct a standings.json)
+
+      # Genera team_ratings.json para la gráfica de evolución de rating
+      - name: Paso 6 - Exportar historial de Elo por equipo
+        run: python exportar_historial_elo.py
+
+      # Corre al final: sus 10,000 simulaciones sobreescriben standings.json
+      # agregando el campo po_pct (% de playoffs). matchups.json no lo toca.
+      - name: Paso 7 - Simulacion Monte Carlo (agrega po_pct a standings.json)
         run: python montecarlo.py
- 
+
       - name: Hacer commit de los archivos actualizados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/*.csv standings.json matchups.json
+          git add data/*.csv standings.json matchups.json meta.json team_ratings.json
           git diff --staged --quiet || git commit -m "Actualizacion automatica de predicciones NFL"
           git push
- 

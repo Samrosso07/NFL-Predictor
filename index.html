@@ -5,6 +5,7 @@
 <title>NFL Elo Predictor 2026 — Mockup</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <style>
   :root{
     --paper:#F6F6F4;
@@ -143,7 +144,40 @@
   .elo-seg{height:100%;}
   .elo-caption{display:flex;justify-content:space-between;margin-top:5px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-soft);}
 
+  /* ---------- Partido ya jugado: marcador + acierto ---------- */
+  .mcard.final{border-color:var(--line);}
+  .final-score{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14.5px;font-variant-numeric:tabular-nums;}
+  .final-score.winner{color:var(--ink);}
+  .final-score.loser{color:var(--ink-soft);}
+  .result-tag{
+    margin-top:12px;display:flex;align-items:center;gap:6px;justify-content:center;
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+    padding:7px 0;border-top:1px dashed var(--line);
+  }
+  .result-tag .icon{font-weight:700;font-size:12px;}
+  .result-tag.correct{color:#2E9E5B;}
+  .result-tag.incorrect{color:var(--accent);}
+  .result-tag.tie{color:var(--ink-soft);}
+
   footer.note{margin-top:30px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink-soft);text-align:center;}
+
+  /* ---------- Rating evolution ---------- */
+  .team-picker{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
+  .teambtn{
+    display:flex;align-items:center;gap:7px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12.5px;
+    background:var(--paper-raised);border:1px solid var(--line);border-radius:20px;
+    padding:6px 12px 6px 8px;cursor:pointer;color:var(--ink-soft);
+  }
+  .teambtn .dot{width:14px;height:14px;border-radius:50%;flex:none;}
+  .teambtn.active{border-color:var(--accent);color:var(--ink);background:var(--accent-soft);}
+  .chartcard{
+    background:var(--paper-raised);border:1px solid var(--line);border-radius:8px;
+    padding:20px 18px;box-shadow:var(--shadow);
+  }
+  .chartcard-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .chartcard-head .badge{width:30px;height:30px;font-size:11px;}
+  .chartcard-head .teamname{font-size:16px;}
+  .chart-wrap{position:relative;height:340px;}
 
   /* ---------- Responsive ---------- */
   @media (max-width:640px){
@@ -169,7 +203,7 @@
     <div>
       <p class="eyebrow">Modelo Elo · K-factor ajustado</p>
       <h1>NFL Elo Predictor — Temporada 2026</h1>
-      <p class="subnote">32 equipos · datos ilustrativos para mockup</p>
+      <p class="subnote">32 equipos · <span id="ultima-actualizacion">cargando datos...</span></p>
     </div>
     <button class="theme-btn" onclick="toggleTheme()">MODO OSCURO/CLARO</button>
   </header>
@@ -177,6 +211,7 @@
   <div class="toptabs">
     <button class="toptab active" data-view="standings" onclick="showView('standings')">Standings Proyectados</button>
     <button class="toptab" data-view="calendar" onclick="showView('calendar')">Calendario Semanal</button>
+    <button class="toptab" data-view="ratings" onclick="showView('ratings')">Evolución de Rating</button>
   </div>
 
   <!-- ============ VIEW 1: STANDINGS ============ -->
@@ -214,6 +249,17 @@
     </div>
 
     <div class="cardgrid" id="matchup-grid"></div>
+  </div>
+
+  <!-- ============ VIEW 3: RATING EVOLUTION ============ -->
+  <div class="view" id="view-ratings">
+    <div class="team-picker" id="team-picker"></div>
+    <div class="chartcard">
+      <div class="chartcard-head" id="rating-chart-head"></div>
+      <div class="chart-wrap">
+        <canvas id="rating-chart"></canvas>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -273,7 +319,11 @@ function matchupsForWeek(week){
     home: teamByAbbr(g.home),
     away: teamByAbbr(g.away),
     homePct: g.homePct,
-    awayPct: g.awayPct
+    awayPct: g.awayPct,
+    jugado: !!g.jugado,
+    homeScore: g.homeScore,
+    awayScore: g.awayScore,
+    acierto: g.acierto
   }));
 }
 
@@ -336,7 +386,35 @@ function selectWeek(w){
   renderWeekList();
   renderMatchups();
 }
-function matchupCard(g){
+function matchupCardJugado(g){
+  const awayGano = g.awayScore > g.homeScore;
+  const homeGano = g.homeScore > g.awayScore;
+  const empate = g.homeScore === g.awayScore;
+
+  let resultTag;
+  if(empate){
+    resultTag = `<div class="result-tag tie"><span class="icon">—</span> Empate</div>`;
+  } else if(g.acierto){
+    resultTag = `<div class="result-tag correct"><span class="icon">✓</span> Modelo acertó</div>`;
+  } else {
+    resultTag = `<div class="result-tag incorrect"><span class="icon">✗</span> Modelo falló</div>`;
+  }
+
+  return `<div class="mcard final">
+    <div class="mcard-top"><span>Semana ${String(currentWeek).padStart(2,'0')}</span><span>Final</span></div>
+    <div class="mrow">
+      <div class="mteam"><span class="loc">@</span>${badge(g.away)}<span class="teamname">${g.away.name}</span></div>
+      <span class="final-score ${awayGano?'winner':'loser'}">${g.awayScore}</span>
+    </div>
+    <div class="mrow">
+      <div class="mteam"><span class="loc">vs</span>${badge(g.home)}<span class="teamname">${g.home.name}</span></div>
+      <span class="final-score ${homeGano?'winner':'loser'}">${g.homeScore}</span>
+    </div>
+    ${resultTag}
+  </div>`;
+}
+
+function matchupCardFuturo(g){
   return `<div class="mcard">
     <div class="mcard-top"><span>Semana ${String(currentWeek).padStart(2,'0')}</span><span>Elo Confidence</span></div>
     <div class="mrow">
@@ -357,8 +435,102 @@ function matchupCard(g){
     </div>
   </div>`;
 }
+
+function matchupCard(g){
+  return g.jugado ? matchupCardJugado(g) : matchupCardFuturo(g);
+}
 function renderMatchups(){
   document.getElementById('matchup-grid').innerHTML = matchupsForWeek(currentWeek).map(matchupCard).join('');
+}
+
+// ---------------- RATING EVOLUTION ----------------
+let TEAM_RATINGS = {};      // se llena con team_ratings.json
+let ratingChart = null;     // instancia de Chart.js activa
+let selectedTeamAbbr = 'KC';
+
+function renderTeamPicker(){
+  const picker = document.getElementById('team-picker');
+  const sorted = [...TEAMS].sort((a,b)=> a.name.localeCompare(b.name));
+  picker.innerHTML = sorted.map(t => `
+    <button class="teambtn ${t.abbr===selectedTeamAbbr?'active':''}" onclick="selectTeamRating('${t.abbr}')">
+      <span class="dot" style="background:${t.color}"></span>${t.abbr}
+    </button>
+  `).join('');
+}
+
+function selectTeamRating(abbr){
+  selectedTeamAbbr = abbr;
+  document.querySelectorAll('.teambtn').forEach(b => {
+    b.classList.toggle('active', b.textContent.trim() === abbr);
+  });
+  renderRatingChart(abbr);
+}
+
+function renderRatingChart(abbr){
+  const team = teamByAbbr(abbr);
+  const historial = TEAM_RATINGS[abbr] || [];
+
+  document.getElementById('rating-chart-head').innerHTML = team
+    ? `${badge(team)}<span class="teamname">${team.name}</span>`
+    : '';
+
+  const labels = historial.map(h => `${h.season} · S${h.week}`);
+  const valores = historial.map(h => h.elo);
+
+  const ctx = document.getElementById('rating-chart').getContext('2d');
+  const colorLinea = team ? team.color : '#999';
+
+  if(ratingChart){ ratingChart.destroy(); }
+
+  const styles = getComputedStyle(document.body);
+  const colorInk = styles.getPropertyValue('--ink-soft').trim();
+  const colorLine = styles.getPropertyValue('--line').trim();
+
+  ratingChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Rating Elo',
+        data: valores,
+        borderColor: colorLinea,
+        backgroundColor: colorLinea,
+        borderWidth: 2,
+        pointRadius: 0,
+        tension: 0.15,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => historial[items[0].dataIndex]
+              ? `Temporada ${historial[items[0].dataIndex].season} · Semana ${historial[items[0].dataIndex].week}`
+              : '',
+            label: (item) => `Elo: ${item.formattedValue}`
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: colorInk,
+            maxTicksLimit: 12,
+            font: { family: 'JetBrains Mono', size: 10 }
+          },
+          grid: { color: colorLine }
+        },
+        y: {
+          ticks: { color: colorInk, font: { family: 'JetBrains Mono', size: 10 } },
+          grid: { color: colorLine }
+        }
+      }
+    }
+  });
 }
 
 // ---------------- VIEW SWITCH / THEME ----------------
@@ -366,10 +538,12 @@ function showView(v){
   document.querySelectorAll('.toptab').forEach(b=>b.classList.toggle('active', b.dataset.view===v));
   document.getElementById('view-standings').classList.toggle('active', v==='standings');
   document.getElementById('view-calendar').classList.toggle('active', v==='calendar');
+  document.getElementById('view-ratings').classList.toggle('active', v==='ratings');
 }
 function toggleTheme(){
   const html = document.body;
   html.setAttribute('data-theme', html.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
+  if(ratingChart){ renderRatingChart(selectedTeamAbbr); }
 }
 
 async function cargarDatosReales() {
@@ -390,14 +564,39 @@ async function cargarDatosReales() {
     // 2. Cargar el JSON de los partidos (Matchups)
     const respuestaMatchups = await fetch('matchups.json');
     MATCHUPS_BY_WEEK = await respuestaMatchups.json();
-    
+
     // 3. Dibujar todo en pantalla con los datos reales
     renderStandings();
     renderWeekList();
     renderMatchups();
-    
+
   } catch (error) {
     console.error("Error cargando los JSONs. Asegúrate de correr el servidor local:", error);
+  }
+
+  // 4. Cargar historial de Elo por equipo (Mejora 3 - Fase H)
+  try {
+    const respuestaRatings = await fetch('team_ratings.json');
+    TEAM_RATINGS = await respuestaRatings.json();
+    renderTeamPicker();
+    renderRatingChart(selectedTeamAbbr);
+  } catch (error) {
+    console.error("No se pudo cargar team_ratings.json:", error);
+  }
+
+  // 5. Cargar la fecha de última actualización (Mejora 2 - Fase H)
+  try {
+    const respuestaMeta = await fetch('meta.json');
+    const meta = await respuestaMeta.json();
+    const fecha = new Date(meta.last_updated);
+    const fechaTexto = fecha.toLocaleString('es-CO', {
+      day: '2-digit', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+    document.getElementById('ultima-actualizacion').textContent = `Actualizado: ${fechaTexto}`;
+  } catch (error) {
+    document.getElementById('ultima-actualizacion').textContent = 'datos ilustrativos para mockup';
+    console.error("No se pudo cargar meta.json:", error);
   }
 }
 

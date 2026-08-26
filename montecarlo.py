@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import random
 import json
+from datetime import datetime, timezone
 
 # 1. Parámetros Iniciales y Diccionario de la Liga
 ITERACIONES = 10000
@@ -143,3 +144,11 @@ with open('standings.json', 'w') as f:
     json.dump(datos_json, f, indent=2)
 
 print("✅ standings.json generado con éxito.")
+
+# 6. Marca de tiempo final del pipeline (Mejora 2 - Fase H)
+# Este es el último paso del pipeline, así que esta fecha es la real
+# "última actualización" que debe mostrar la interfaz.
+with open('meta.json', 'w') as f:
+    json.dump({'last_updated': datetime.now(timezone.utc).isoformat()}, f, indent=2)
+
+print("✅ meta.json actualizado con la fecha final del pipeline.")
