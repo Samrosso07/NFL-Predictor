@@ -5,20 +5,20 @@
       "away": "NE",
       "homePct": 66,
       "awayPct": 34,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 13.0,
+      "awayScore": 10.0,
+      "acierto": true
     },
     {
       "home": "LA",
       "away": "SF",
       "homePct": 61,
       "awayPct": 39,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 7.0,
+      "awayScore": 27.0,
+      "acierto": false
     },
     {
       "home": "CAR",
