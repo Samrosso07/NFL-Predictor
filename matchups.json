@@ -25,140 +25,140 @@
       "away": "CHI",
       "homePct": 52,
       "awayPct": 48,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 37.0,
+      "awayScore": 59.0,
+      "acierto": false
     },
     {
       "home": "CIN",
       "away": "TB",
       "homePct": 58,
       "awayPct": 42,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 33.0,
+      "awayScore": 27.0,
+      "acierto": true
     },
     {
       "home": "DET",
       "away": "NO",
       "homePct": 71,
       "awayPct": 29,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 31.0,
+      "awayScore": 30.0,
+      "acierto": true
     },
     {
       "home": "HOU",
       "away": "BUF",
       "homePct": 57,
       "awayPct": 43,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 31.0,
+      "awayScore": 36.0,
+      "acierto": false
     },
     {
       "home": "IND",
       "away": "BAL",
       "homePct": 53,
       "awayPct": 47,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 23.0,
+      "awayScore": 41.0,
+      "acierto": false
     },
     {
       "home": "JAX",
       "away": "CLE",
       "homePct": 69,
       "awayPct": 31,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 34.0,
+      "awayScore": 10.0,
+      "acierto": true
     },
     {
       "home": "PIT",
       "away": "ATL",
       "homePct": 64,
       "awayPct": 36,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 20.0,
+      "awayScore": 13.0,
+      "acierto": true
     },
     {
       "home": "TEN",
       "away": "NYJ",
       "homePct": 58,
       "awayPct": 42,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 10.0,
+      "awayScore": 23.0,
+      "acierto": false
     },
     {
       "home": "LAC",
       "away": "ARI",
       "homePct": 72,
       "awayPct": 28,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 14.0,
+      "awayScore": 26.0,
+      "acierto": false
     },
     {
       "home": "LV",
       "away": "MIA",
       "homePct": 50,
       "awayPct": 50,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 27.0,
+      "awayScore": 13.0,
+      "acierto": false
     },
     {
       "home": "MIN",
       "away": "GB",
       "homePct": 61,
       "awayPct": 39,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 39.0,
+      "awayScore": 22.0,
+      "acierto": true
     },
     {
       "home": "PHI",
       "away": "WAS",
       "homePct": 70,
       "awayPct": 30,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 24.0,
+      "awayScore": 22.0,
+      "acierto": true
     },
     {
       "home": "NYG",
       "away": "DAL",
       "homePct": 50,
       "awayPct": 50,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 28.0,
+      "awayScore": 20.0,
+      "acierto": true
     },
     {
       "home": "KC",
       "away": "DEN",
       "homePct": 53,
       "awayPct": 47,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 31.0,
+      "awayScore": 10.0,
+      "acierto": true
     }
   ],
   "2": [
