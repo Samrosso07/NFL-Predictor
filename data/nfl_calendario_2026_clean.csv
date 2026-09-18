@@ -15,7 +15,7 @@ season,week,game_type,home_team,away_team,home_score,away_score,result
 2026,1,REG,PHI,WAS,24.0,22.0,2.0
 2026,1,REG,NYG,DAL,28.0,20.0,8.0
 2026,1,REG,KC,DEN,31.0,10.0,21.0
-2026,2,REG,BUF,DET,,,
+2026,2,REG,BUF,DET,41.0,31.0,10.0
 2026,2,REG,ATL,CAR,,,
 2026,2,REG,BAL,NO,,,
 2026,2,REG,CHI,MIN,,,

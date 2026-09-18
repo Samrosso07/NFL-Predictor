@@ -167,10 +167,10 @@
       "away": "DET",
       "homePct": 63,
       "awayPct": 37,
-      "jugado": false,
-      "homeScore": null,
-      "awayScore": null,
-      "acierto": null
+      "jugado": true,
+      "homeScore": 41.0,
+      "awayScore": 31.0,
+      "acierto": true
     },
     {
       "home": "ATL",
